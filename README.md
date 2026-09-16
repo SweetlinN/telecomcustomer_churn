@@ -2,6 +2,12 @@
 
 Telecom Customer Churn Prediction
 
+# how to install required packages
+
+'''python
+pip install -r requirement.txt
+'''
+
 # Technologies
 
 - python
