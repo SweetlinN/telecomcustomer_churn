@@ -1,15 +1,16 @@
 import pandas as pd
-from data_loading import load_data
+from components.data_loading import load_data
 
 
 def dataset_check(data:pd.DataFrame):
+
     '''
     performs basic dataset checks
 
     '''
 
     print('\n'+'*'*60)
-    print('Dataset Overview')
+    print('Dataset Overview'.center(60))
     print('*'*60)
 
     print(f'shape: {data.shape}')
@@ -32,10 +33,7 @@ def main():
     dataset_check(data)
 
 
-
-
-
-    if __name__ == '__main__':
+if __name__ == '__main__':
         main()
 
 
