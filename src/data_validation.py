@@ -1,0 +1,44 @@
+import pandas as pd
+from data_loading import load_data
+
+
+def dataset_check(data:pd.DataFrame):
+    '''
+    performs basic dataset checks
+
+    '''
+
+    print('\n'+'*'*60)
+    print('Dataset Overview')
+    print('*'*60)
+
+    print(f'shape: {data.shape}')
+    print('\nShape of dataframe\n')
+
+    print(data.shape)
+
+
+    print('\nColumns of dataframe\n')
+    print(data.columns.tolist())
+
+    print('\nMissing values in dataframe\n')
+    print(data.isnull().sum())
+
+    print('\nDuplicated values in dataframe\n')
+    print(data.duplicated().sum())
+
+def main():
+    data = load_data()
+    dataset_check(data)
+
+
+
+
+
+    if __name__ == '__main__':
+        main()
+
+
+
+
+
