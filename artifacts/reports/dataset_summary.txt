@@ -1,0 +1,16 @@
+
+============================================================                
+Exploratory Data Analysis
+                 
+============================================================
+Dataset Shape: (7043, 21)
+Target Variable Distribution
+Churn
+No     5174
+Yes    1869
+Name: count, dtype: int64
+Variable Distribution
+gender
+Male      3555
+Female    3488
+Name: count, dtype: int64
